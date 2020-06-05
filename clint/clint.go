@@ -38,6 +38,7 @@ func Prompt() {
 		fmt.Println("	XSSKeylog 	: Keylogger para XSS")
 		fmt.Println("\nLista de modulos de exploits")
 		fmt.Println("	CVE-2018-15877	: Execução de comandos remoto")
+		fmt.Println("	CVE-2017-9603	: SQLi(Não Funcional), File Read e XSS ")
 
 	case "Buster":
 		modules.Buster()
@@ -50,6 +51,10 @@ func Prompt() {
 	case "CVE-2018-15877":
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45274\n\n")
 		modules.CVE201815877()
+
+	case "CVE-2017-9603":
+		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/42172\n\n")
+		modules.CVE20179603()
 
 	case "Exit":
 		os.Exit(0)
