@@ -38,7 +38,7 @@ func Prompt() {
 		fmt.Println("	XSSKeylog 	: Keylogger para XSS")
 		fmt.Println("\nLista de modulos de exploits")
 		fmt.Println("	CVE-2018-15877	: Execução de comandos remoto")
-		fmt.Println("	CVE-2017-9603	: SQLi(Não Funcional), File Read e XSS ")
+		fmt.Println("	CVE-2017-9603	: SQLi, File Read e XSS ")
 
 	case "Buster":
 		modules.Buster()
