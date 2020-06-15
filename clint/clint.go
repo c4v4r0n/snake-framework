@@ -56,6 +56,9 @@ func Prompt() {
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/42172\n\n")
 		modules.CVE20179603()
 
+	case "CVE-2019-9618":
+		fmt.Printf("https://www.exploit-db.com/exploits/46537\n\n")
+		modules.CVE20199618()
 	case "Exit":
 		os.Exit(0)
 	}
