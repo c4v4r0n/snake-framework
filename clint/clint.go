@@ -36,7 +36,7 @@ func Prompt() {
 		fmt.Println("	Exit		: Encerra a execução")
 		fmt.Println("	Buster		: Fuzzer de url multithread")
 		fmt.Println("	XSSKeylog 	: Keylogger para XSS")
-		fmt.Println("\nLista de modulos de exploits")
+		fmt.Println("\nLista de modulos de exploits (CVE's)")
 		fmt.Println("	CVE-2017-9603	: SQLi, File Read e XSS")
 		fmt.Println("	CVE-2018-7422	: Local File Include")
 		fmt.Println("	CVE-2018-15877	: Remote Code Execution")
