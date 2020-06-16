@@ -39,6 +39,7 @@ func Prompt() {
 		fmt.Println("\nLista de modulos de exploits")
 		fmt.Println("	CVE-2019-9618	: Local File Include")
 		fmt.Println("	CVE-2018-15877	: Execução de comandos remoto")
+		fmt.Println("	CVE-2018-16283	: Local File Include")
 		fmt.Println("	CVE-2017-9603	: SQLi, File Read e XSS ")
 
 	case "Buster":
@@ -58,8 +59,12 @@ func Prompt() {
 		modules.CVE20179603()
 
 	case "CVE-2019-9618":
-		fmt.Printf("https://www.exploit-db.com/exploits/46537\n\n")
+		fmt.Printf("Rerefencias: https://www.exploit-db.com/exploits/46537\n\n")
 		modules.CVE20199618()
+
+	case "CVE-2018-16283":
+		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45438\n\n")
+		modules.CVE201816283()
 	case "Exit":
 		os.Exit(0)
 	}
