@@ -47,21 +47,22 @@ func Prompt() {
 	case "XSSKeylog":
 		modules.XSSServer()
 
+	case "CVE-2017-9603":
+		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/42172\n\n")
+		modules.CVE20179603()
+
 	case "CVE-2018-15877":
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45274\n\n")
 		modules.CVE201815877()
 
-	case "CVE-2017-9603":
-		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/42172\n\n")
-		modules.CVE20179603()
+	case "CVE-2018-16283":
+		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45438\n\n")
+		modules.CVE201816283()
 
 	case "CVE-2019-9618":
 		fmt.Printf("Rerefencias: https://www.exploit-db.com/exploits/46537\n\n")
 		modules.CVE20199618()
 
-	case "CVE-2018-16283":
-		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45438\n\n")
-		modules.CVE201816283()
 	case "Exit":
 		os.Exit(0)
 	}
