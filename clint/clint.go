@@ -37,7 +37,8 @@ func Prompt() {
 		fmt.Println("	Buster		: Fuzzer de url multithread")
 		fmt.Println("	XSSKeylog 	: Keylogger para XSS")
 		fmt.Println("\nLista de modulos de exploits")
-		fmt.Println("	CVE-2017-9603	: SQLi, File Read e XSS ")
+		fmt.Println("	CVE-2017-9603	: SQLi, File Read e XSS")
+		fmt.Println("	CVE-2018-7422	: Local File Include")
 		fmt.Println("	CVE-2018-15877	: Remote Code Execution")
 		fmt.Println("	CVE-2018-16283	: Local File Include")
 		fmt.Println("	CVE-2019-9618	: Local File Include")
@@ -50,6 +51,10 @@ func Prompt() {
 	case "CVE-2017-9603":
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/42172\n\n")
 		modules.CVE20179603()
+
+	case "CVE-2018-7422":
+		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/44340\n\n")
+		modules.CVE20187422()
 
 	case "CVE-2018-15877":
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45274\n\n")
