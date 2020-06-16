@@ -9,10 +9,12 @@ import (
 )
 
 //XSSServer ...
-func XSSServer(port string) {
-	var lhost string
+func XSSServer() {
+	var lhost, port string
 	fmt.Printf("LHost: ")
 	fmt.Scanf("%s", &lhost)
+	fmt.Printf("Porta: ")
+	fmt.Scanf("%s", &port)
 	configHost(lhost, port)
 
 	fs := http.FileServer(http.Dir("./modules/xss"))

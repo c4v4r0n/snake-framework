@@ -45,10 +45,7 @@ func Prompt() {
 	case "Buster":
 		modules.Buster()
 	case "XSSKeylog":
-		var port string
-		fmt.Printf("Porta: ")
-		fmt.Scanf("%s", &port)
-		modules.XSSServer(port)
+		modules.XSSServer()
 
 	case "CVE-2018-15877":
 		fmt.Printf("Referencias: https://www.exploit-db.com/exploits/45274\n\n")
