@@ -4,5 +4,5 @@ Tomei a libertadade de compilar um binario de 64 bits para Linux com a intençã
 ## Uso
 ./snake-framework
 
-# Observação
+### Observação
 O arquivo wordlist/wordpress.fuzz.txt não foi desenvolvido por mim
