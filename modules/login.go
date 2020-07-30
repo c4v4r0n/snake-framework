@@ -8,15 +8,16 @@ import (
 
 //Login ...
 func Login(url string) string {
-	var username, password string
-
+	var username, password, stringForm string
+	stringForm = "&wp-submit=Acessar&redirect_to=" + url
+	stringForm += "%2Fwp-admin%2F&testcookie=1"
 	fmt.Printf("Usuario: ")
 	fmt.Scanf("%s", &username)
 	fmt.Printf("Senha: ")
 	fmt.Scanf("%s", &password)
 
 	client := new(http.Client)
-	formData := strings.NewReader("log=" + username + "&pwd=" + password + "&wp-submit=Acessar&redirect_to=http%3A%2F%2F172.17.0.2%2Fwordpress%2Fwp-admin%2F&testcookie=1")
+	formData := strings.NewReader("log=" + username + "&pwd=" + password + stringForm)
 	req, _ := http.NewRequest("POST", url+"/wp-login.php", formData)
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	resp, _ := client.Do(req)
